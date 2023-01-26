@@ -28,6 +28,7 @@ function createAsset(fileName) {
   // Transpile each module's code down to CommonJS.
   const { code } = babel.transformFromAst(ast, null, {
     presets: ["@babel/preset-env"],
+    minified: true,
   });
 
   return {
