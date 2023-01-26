@@ -1,0 +1,23 @@
+{
+  "name": "bundler",
+  "version": "1.0.0",
+  "description": "A home-made bundler.",
+  "main": "entry.js",
+  "author": "gdbroman <99gustaf@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-traverse": "^6.26.0",
+    "babylon": "^6.18.0",
+    "eslint": "^8.32.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "node": "^18.13.0",
+    "prettier": "^2.8.3"
+  },
+  "scripts": {
+    "bundle": "node ./bundler.js",
+    "lint": "eslint . --ext .js --ignore-path .gitignore"
+  }
+}
