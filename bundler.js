@@ -101,4 +101,5 @@ function bundle(graph) {
 const graph = creaateGraph("./example/entry.js");
 const result = bundle(graph);
 
-console.log(result);
+// Save result to file.
+fs.writeFileSync("./bundle.js", result);
